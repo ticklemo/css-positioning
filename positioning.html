@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="block static">
+    <h4>Static</h4>
+    <p>I am the default position of elements. My position cannot be altered by extra properties like top, bottom, left or right.  </p>
+  </div>
+  <!-- static div ends -->
+
+  <div class="block absolute">
+    <h4>Absolute</h4>
+    <p>I am positioned to the viewport or window. I am pulled from the document and can be sent anywhere on the screen using extra properties. I will go on top of other elements unless I have a lower z-index, it is fixed or there is another absolute later in the cascade. I do not stick to my position on scroll.</p>
+  </div>
+  <!-- absolute div ends -->
+
+  <div class="block fixed">
+    <h4>Fixed Positioning </h4>
+    <p>I am fixed even if you scroll, I am positioned relative to the viewport or window. I will go on top of other elements unless I have a lower z-index or there is another fixed later in the cascade. I stick to my position and will stay on the screen even when you scroll. </p>
+  </div>
+  <!-- fixed div ends -->
+
+
+  <div class="block relative">
+    <h4>Relative Positioning</h4>
+    <p>I am positioned relative to where I am usually placed. I do not get pulled from the flow of the document, but am still able to be moved using properties (top, right, bottom, left).</p>
+  </div>
+  <!-- relative div ends -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+</body>
+</html>

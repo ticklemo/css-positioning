@@ -1,0 +1,36 @@
+html {
+  height: 8000px;
+}
+
+.block {
+  height: 250px;
+  width: 250px;
+  margin: 20px;
+  -webkit-box-shadow: 6px 6px 5px 0px rgba(110,109,110,0.56);
+  padding: 20px;
+}
+
+.static {
+  background-color: rgb(87, 202, 218);
+}
+
+.absolute {
+  background-color: rgb(244, 132, 51);
+  position: absolute;
+  right: 800px;
+  top: 10px;
+}
+
+.fixed {
+  background-color: rgb(148, 88, 189);
+  position: fixed;
+  bottom: 50px;
+  right: 80px;
+}
+
+.relative {
+  background-color: rgb(232, 79, 217);
+  position: relative;
+  left: 140px;
+  top: -35px;
+}
