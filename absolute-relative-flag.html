@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/custom.css">
+  <!-- custom CSS always comes last in the work flow of css files/libraries bc you want it to override everything else -->
+  <title>NZ FLAG TIME</title>
+</head>
+<body>
+
+  <h1>hello world</h1>
+  <div class="flag-pole">
+
+  </div>
+
+  <div class="flag" id="flag">
+    <img src="./img/union-jack.jpg" class="union" alt="union jack image">
+    <i class="fa fa-star bottom" aria-hidden="true"></i>
+    <i class="fa fa-star left" aria-hidden="true"></i>
+    <i class="fa fa-star right" aria-hidden="true"></i>
+    <i class="fa fa-star top" aria-hidden="true"></i>
+  </div>
+<!-- flag ENDS -->
+
+  <button id="trigger">Play Anthem</button>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <script>
+
+    $(document).ready(function(){
+      $('img').click(function(){
+        alert('you clicked the union jack how epic');
+      });
+    });
+
+    $(document).ready(function(){
+      // get the trigger button then add a click event
+      $('#trigger').click(function(){
+        // $('.fa-star').hide(1000)
+        var audio = new Audio('./music/anthem.mp3');
+        audio.play();
+      });
+    // click function ends
+    });
+    // document ready ends
+
+  </script>
+
+</body>
+</html>
